@@ -23,7 +23,7 @@ class Book: Item, Borrowable {
     var borrowDate: Date?
     var returnDate: Date?
     var isBorrowed: Bool
-  
+    
     init(id: String, title: String, author: String, borrowDate: Date? = nil, returnDate: Date? = nil, isBorrowed: Bool = false) {
         self.borrowDate = borrowDate
         self.returnDate = returnDate
@@ -33,7 +33,7 @@ class Book: Item, Borrowable {
     
     func checkIn() {
         borrowDate = nil
-            returnDate = nil
-            isBorrowed = false
+        returnDate = nil
+        isBorrowed = false
     }
 }
